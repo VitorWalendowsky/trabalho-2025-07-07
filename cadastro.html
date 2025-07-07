@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-width", initial-scale="1.0">
+    <title>Trabalhe conosco</title>
+</head>
+<body>
+    <h1>Junte-se a nós</h1>
+
+    <h2>Cadastro</h2>
+    
+    <form action="htpps://localhost8001/PythonMc/cadastrar" method="get">
+ 
+        <label for="campo-nome">Nome</label>
+        <input type="text" required minlength="3" maxlength="50" id="campo-nome" name="Nome">
+        <br>
+
+        <label for="campo-idade">Idade</label>
+        <input type="numer" required min="18" max="100" id="campo-idade" name="Idade">
+        <br>
+
+        <!--Ver como incluir pattern-->
+        <label for="campo-cep">cep</label>
+        <input type="text" required minlength="10" maxlength="10" id="campo-cep" name="cep"
+        pattern="\d{2}\.\d{3}\-\d{3}" 
+        placeholder="00.000-000" 
+        required>>
+        <br>
+        
+        <label for="campo-estado">Estado</label>
+        <select required name="Estado" id="campo-estado">
+        <option value="" disabled selected>Selecione um estado</option>
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+        </select>
+        <br>
+
+        <label for="campo-cidade">Cidade</label>
+        <input type="text" required minlength="3" maxlength="50" id="campo-cidade" name="cidade">
+        <br>
+
+        <label for="campo-bairro">Bairro</label>
+        <input type="text" required minlength="3" maxlength="50" id="campo-bairro" name="bairro">
+        <br>
+
+        <label for="campo-logradouro">Logradouro</label>
+        <input type="text" required minlength="3" maxlength="50" id="campo-logradouro" name="logradouro">
+        <br>
+
+        <label for="campo-numero">Numero</label>
+        <input type="text" required minlength="3" maxlength="50" id="campo-numero" name="numero">
+        <br>
+
+        <label for="campo-possui-moto">Moto</label>
+        <input type="checkbox" id="campo-possui-moto" name="moto" value="sim">
+        <br>
+
+        <br>
+        <input type="radio" id="campo-casa" name="vaga" value="casa">
+        <label for="campo-casa">Casa</label>
+
+        <input type="radio" id="campo-apartamento" name="vaga" value="apartamento">
+        <label for="campo-apartamento">Apartamento</label>
+        <br>
+
+        <label for="campo-complemento">Complemento</label>
+        <input type="textarea" id="campo-complemento" required name="complemento">
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
